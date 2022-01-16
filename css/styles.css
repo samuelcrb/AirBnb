@@ -1,0 +1,299 @@
+/* Estilos generales */
+@font-face { 
+    font-family: Montserrat;
+     src: url(fonts/Montserrat/Montserrat-Medium.ttf);
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Montserrat;
+}
+
+body{
+    color: #222;
+}
+
+/* HEADER: Encabezado de la página  */
+header{
+    height: 80px;
+}
+
+li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+#logo{
+    display: block;
+    float: left;
+    width: 30px;
+    margin-top: 24px;
+    margin-right: 6px;
+}
+
+#news{
+    margin-left: 80px;
+}
+
+#news h2{
+    font-size: 24px;
+    float: left;
+    display: block;
+    margin-top: 29px;
+    text-decoration: none;
+    color: black;
+}
+
+#menu{
+    float: right;
+    line-height: 90px;
+    margin-right: 35px;
+}
+
+#menu a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+#menu li:hover{
+    box-shadow: 0px -2px 0px black inset;
+}
+
+/* Sección 1 del container principal */
+h1{
+    margin-top: 80px;
+    margin-bottom: 15px;
+}
+
+#datos{
+    margin-left: 20px;
+    margin-bottom: 20px;
+
+}
+
+#foto, #foto img{
+    width: 100%;
+}
+
+#contenedor1{
+    margin: 0 auto;
+    width: 620px;
+}
+
+#contenedor1 p{
+    margin-bottom: 90px;
+}
+
+/* Sección 2 del container principal */
+#contenedor2{
+    background-color: #eee;
+}
+
+#contenedor2 #conten_hijo_seccion2{
+    padding: 40px;
+    
+}
+
+.tarjetas{
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    width: 270px;
+    height: 310px;
+    margin: 20px;
+    padding: 32px;
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 12px;
+}
+
+.tarjetas h3{
+    font-size:46px ;
+}
+
+.tarjetas p:nth-child(2){
+    font-size: 16px;
+}
+
+.tarjetas p:nth-child(3){
+    position:absolute;
+    bottom: 20px;
+    font-size: 12px;
+}
+
+#conten_hijo_seccion2 .tarjetas:nth-child(7){
+    width: 500px;
+}
+
+/* Sección 3 del container principal */
+#contenedor3{
+    margin-top: 80px;
+    width: 100%;
+}
+
+#contenedor3 > h2{
+    margin-left: 60px;
+}
+
+.fundadores:hover h2{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.fundadores:hover img{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+#conten_hijo_seccion3{
+    margin-left: 60px;
+    margin-top: 40px;
+}
+
+.fundadores{
+    display: inline-block;
+    width: 456px;
+    margin-right: 15px;
+    border-radius:12px;
+}
+
+.fundadores .overflow{
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+.fundadores img{
+    width: 100%;
+    border-radius:12px;
+}
+
+.fundadores h2{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.fundadores h3{
+    font-size: 11px;
+    font-weight: 200;
+}
+
+/* Sección 4 del container principal */
+#contenedor4{
+    margin-top: 80px;
+}
+
+#conten_hijo1_seccion4{
+    display: inline-block;
+    width: 100%;
+   
+}
+
+#conten_hijo1_seccion4 h2{
+    display: inline-block;
+    margin-left: 60px;
+}
+
+#selector{
+    float:right;
+    margin-right: 55px;
+    line-height: 26px;
+}
+
+#selector label{
+    margin-right: 10px;
+}
+
+#selector label, #selector select{
+    vertical-align: middle;
+    line-height: 15px;
+}
+
+#timeLine{
+    height: 28px;
+}
+
+#conten_hijo2_seccion4{
+    margin-top: 30px;
+    margin-left: 50px;
+}
+
+#conten_hijo2_seccion4 > div{
+    display: inline-block;
+    vertical-align: top;
+    border-radius: 12px;
+    width: 336px;
+    height: 500px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border: 1px solid #ddd;
+}
+
+#conten_hijo2_seccion4 > div div{
+    padding: 24px;
+}
+
+#conten_hijo2_seccion4 img{
+    width: 100%;
+    border-radius: 12px 12px 0px 0px;
+}
+
+#conten_hijo2_seccion4 > div h3{
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+
+#conten_hijo2_seccion4 > div p{
+    font-size: 11px;
+}
+
+#conten_hijo2_seccion4 div:nth-child(1){
+    position: relative;
+}
+
+#conten_hijo2_seccion4 div:nth-child(1) button{
+    position: absolute;
+    top: 50%;
+    left: -7%;
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    background-color: #fff;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+}
+
+#conten_hijo2_seccion4 div:nth-child(1) button:hover{
+    background-color: #eee;
+}
+
+#conten_hijo2_seccion4 div:last-child{
+    position: relative;
+}
+
+#conten_hijo2_seccion4 div:last-child button{
+    position: absolute;
+    top: 50%;
+    right: -7%;
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    background-color: #fff;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+}
+
+#conten_hijo2_seccion4 div:last-child button:hover{
+    background-color: #eee;
+}
+
+/* FOOTER de la página */
+
+footer div{
+    margin-top: 80px;
+}
