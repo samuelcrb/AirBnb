@@ -20,7 +20,7 @@ header{
     height: 80px;
 }
 
-li{
+.menu_li{
     list-style: none;
     display: inline-block;
     margin-right: 20px;
@@ -294,6 +294,85 @@ h1{
 
 /* FOOTER de la página */
 
-footer div{
+footer{
     margin-top: 80px;
+    border-top: 1px solid #ddd;
+    background-color: #f7f7f7;
 }
+
+#contenedor5{
+    margin-left: 60px;
+}
+
+#contenedor5 .nav{
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 50px;
+    width: 370px;
+}
+
+.nav h4{
+    display: inline-block;
+    margin-bottom: 8px;
+    font-size: 11px;
+}
+.nav li{
+    list-style: none;
+    margin-bottom: 15px;
+}
+
+.nav li a{
+    text-decoration: none;
+    color: #222;
+    font-size: 13px;
+}
+
+.nav li a:hover{
+    text-decoration: underline;
+    color: #000;
+    font-weight: 400px;
+}
+
+#aviso_legal{
+    margin-top: 20px;
+    width: 50%;
+    margin-bottom: 20px;
+}
+
+#aviso_legal h4{
+    margin-bottom: 15px;
+    font-size: 11px; 
+}
+
+#aviso_legal p{
+    font-size: 13px; 
+}
+
+/* DERECHOS de la página */
+#conten_hijo_derechos1{
+    border-top: 1px solid #ddd;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#derechos p, #derechos li{
+    float: left;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 13px;
+}
+
+#derechos li{
+    margin-left: 25px;
+}   
+
+#derechos ul{
+    margin-left: 250px;
+}
+
+#derechos a{
+    margin-left: 10px;
+    text-decoration: none;
+    color: #222;
+}
+
