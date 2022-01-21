@@ -16,10 +16,6 @@ body{
 }
 
 /* HEADER: Encabezado de la página  */
-header{
-    height: 80px;
-}
-
 .menu_li{
     list-style: none;
     display: inline-block;
@@ -380,4 +376,7 @@ footer{
     text-decoration: underline;
     color: #222;
 }
+
+
+
 
