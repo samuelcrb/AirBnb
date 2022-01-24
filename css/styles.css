@@ -346,6 +346,7 @@ footer{
 
 /* DERECHOS de la página */
 #conten_hijo_derechos1{
+    display: inline-block;
     border-top: 1px solid #ddd;
     margin-top: 20px;
     margin-bottom: 20px;
