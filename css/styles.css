@@ -16,11 +16,7 @@ body{
 }
 
 /* HEADER: Encabezado de la página  */
-header{
-    height: 80px;
-}
-
-.menu_li{
+#menu li{
     list-style: none;
     display: inline-block;
     margin-right: 20px;
@@ -63,16 +59,14 @@ header{
     box-shadow: 0px -2px 0px black inset;
 }
 
+#main_container{
+    padding: 0px 80px 0px 80px;
+}
+
 /* Sección 1 del container principal */
 h1{
     margin-top: 80px;
     margin-bottom: 15px;
-}
-
-#datos{
-    margin-left: 20px;
-    margin-bottom: 20px;
-
 }
 
 #foto, #foto img{
@@ -81,7 +75,7 @@ h1{
 
 #contenedor1{
     margin: 0 auto;
-    width: 620px;
+    width: 47%;
 }
 
 #contenedor1 p{
@@ -91,20 +85,26 @@ h1{
 /* Sección 2 del container principal */
 #contenedor2{
     background-color: #eee;
+    padding: 0px 80px 0px 80px;
 }
 
-#contenedor2 #conten_hijo_seccion2{
-    padding: 40px;
-    
+#contenedor2 h2{
+    padding-top: 40px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+#conten_hijo_seccion2{
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .tarjetas{
-    display: inline-block;
-    vertical-align: top;
-    position: relative;
-    width: 270px;
-    height: 310px;
-    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 21%;
+    min-height: 270px;
+    margin: 20px 20px 20px 20px;
     padding: 32px;
     background-color: white;
     border: 1px solid white;
@@ -113,30 +113,22 @@ h1{
 
 .tarjetas h3{
     font-size:46px ;
+    margin-bottom: 10px;
 }
 
 .tarjetas p:nth-child(2){
     font-size: 16px;
+    margin-bottom: 22px;
 }
 
 .tarjetas p:nth-child(3){
-    position:absolute;
-    bottom: 20px;
     font-size: 12px;
-}
-
-#conten_hijo_seccion2 .tarjetas:nth-child(7){
-    width: 500px;
 }
 
 /* Sección 3 del container principal */
 #contenedor3{
     margin-top: 80px;
     width: 100%;
-}
-
-#contenedor3 > h2{
-    margin-left: 60px;
 }
 
 .fundadores:hover h2{
@@ -150,15 +142,22 @@ h1{
 }
 
 #conten_hijo_seccion3{
-    margin-left: 60px;
+    display: flex;
     margin-top: 40px;
 }
 
 .fundadores{
-    display: inline-block;
-    width: 386px;
-    margin-right: 15px;
+    margin-right: 10px;
+    margin-left: 10px;
     border-radius:12px;
+}
+
+#conten_hijo_seccion3 div:first-child{
+    margin-left: 0px;
+}
+
+#conten_hijo_seccion3 div:last-child{
+    margin-right: 0px;
 }
 
 .fundadores .overflow{
@@ -196,7 +195,6 @@ h1{
 
 #conten_hijo1_seccion4 h2{
     display: inline-block;
-    margin-left: 60px;
 }
 
 #selector{
@@ -219,19 +217,25 @@ h1{
 }
 
 #conten_hijo2_seccion4{
+    display: flex;
     margin-top: 30px;
-    margin-left: 50px;
+    justify-content: space-around; 
 }
 
 #conten_hijo2_seccion4 > div{
-    display: inline-block;
-    vertical-align: top;
     border-radius: 12px;
-    width: 286px;
-    height: 488px;
+    width: 100%;
     margin-left: 10px;
     margin-right: 10px;
     border: 1px solid #ddd;
+}
+
+#conten_hijo2_seccion4 > div:first-child{
+    margin-left: 0px;
+}
+
+#conten_hijo2_seccion4 > div:last-child{
+    margin-right: 0px;
 }
 
 #conten_hijo2_seccion4 > div div{
@@ -250,46 +254,6 @@ h1{
 
 #conten_hijo2_seccion4 > div p{
     font-size: 11px;
-}
-
-#conten_hijo2_seccion4 div:nth-child(1){
-    position: relative;
-}
-
-#conten_hijo2_seccion4 div:nth-child(1) button{
-    position: absolute;
-    top: 50%;
-    left: -7%;
-    border: 1px solid #ddd;
-    border-radius: 50%;
-    background-color: #fff;
-    width: 32px;
-    height: 32px;
-    cursor: pointer;
-}
-
-#conten_hijo2_seccion4 div:nth-child(1) button:hover{
-    background-color: #eee;
-}
-
-#conten_hijo2_seccion4 div:last-child{
-    position: relative;
-}
-
-#conten_hijo2_seccion4 div:last-child button{
-    position: absolute;
-    top: 50%;
-    right: -7%;
-    border: 1px solid #ddd;
-    border-radius: 50%;
-    background-color: #fff;
-    width: 32px;
-    height: 32px;
-    cursor: pointer;
-}
-
-#conten_hijo2_seccion4 div:last-child button:hover{
-    background-color: #eee;
 }
 
 /* FOOTER de la página */
@@ -350,6 +314,7 @@ footer{
 
 /* DERECHOS de la página */
 #conten_hijo_derechos1{
+    display: inline-block;
     border-top: 1px solid #ddd;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -379,5 +344,141 @@ footer{
 #derechos a:hover{
     text-decoration: underline;
     color: #222;
+}
+
+/* ---------------------- DISEÑO RESPONSIVE ----------------------------------- */
+@media screen and (max-width: 600px){
+
+    header{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    #news{
+        margin-left: 0;
+    }
+
+    #menu{
+        margin: 0;
+    }
+
+    #menu li:last-child{
+        margin-right: 0;
+    }
+
+    #contenedor1{
+        width: 78%;
+        margin: 40px;
+        /* display: flex;
+        flex-wrap: wrap;
+        flex-direction: column; */
+    }
+    #contenedor1 h1{
+        margin-top: 0;
+    }
+
+    #contenedor1 p{
+        margin-bottom: 0;
+    }
+
+    #datos{
+        margin-left: 0;
+    }
+
+    .tarjetas{
+        width: 100%;
+        margin: 20px 0px 20px 0px;
+    }
+
+    #conten_hijo_seccion2 .tarjetas:nth-child(7){
+        width: 100%;
+    }
+
+    #conten_hijo_seccion3{
+        margin-left: 40px;
+    }
+
+    .fundadores{
+        width: 88%;
+        margin-bottom: 40px;
+    }
+
+    #conten_hijo1_seccion4{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    #conten_hijo1_seccion4 h2,#conten_hijo1_seccion4 #selector{
+        margin-left: 40px;
+    }
+
+    #selector{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        background-color: white;
+    }
+
+    #selector label{
+        align-self: center;
+    }
+
+    #conten_hijo2_seccion4{
+        margin-left: 40px;
+    }
+
+    #conten_hijo2_seccion4 > div{
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 25px;
+        width: 88%;
+        min-height: 488px;
+    }
+
+    #conten_hijo2_seccion4 button{
+        display: none;
+    }
+
+    #contenedor5{
+        margin-left: 40px;
+        margin-bottom: 20px;
+    }
+
+    #aviso_legal {
+        width: 100%;
+    }
+
+    #aviso_legal p{
+        width: 90%;
+    }
+
+    #conten_hijo_derechos1{
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    #derechos p{
+        margin-bottom: 10px;
+    }
+
+    #derechos ul{
+        margin:0px;
+    }
+
+    #derechos p, #derechos li{
+        clear:left;
+    }
+
+    #derechos li, #derechos a{
+        margin: 0;
+        list-style: none;
+    }
+
+    #derechos a:nth-child(even){
+        margin-left: 5px;
+    }
 }
 
